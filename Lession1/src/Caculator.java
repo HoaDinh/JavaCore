@@ -4,6 +4,8 @@ public class Caculator {
     int a = 15;
     int b = 7;
     int r=15;
+    double pi = Math.PI;
+
 
     void sum(){
         int c;
@@ -37,7 +39,7 @@ public class Caculator {
     void diameterofaCircle ()
     {
         double c;
-        double pi = Math.PI;
+
         c=2*r*pi;
         System.out.println("The diameter of a Circle is " +c +"cm");
 
@@ -46,7 +48,6 @@ public class Caculator {
     void areaofaCircle ()
     {
         double S;
-        double pi = Math.PI;
         double R= Math.pow(r,2);
         S=R*pi;
         System.out.println("The area of a Circle is " +S +"cm");
