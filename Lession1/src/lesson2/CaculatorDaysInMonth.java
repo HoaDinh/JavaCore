@@ -2,13 +2,15 @@ package lesson2;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Scanner;
 
-public class CaculatorDayInThang {
-    public void daysInThang (int thang)
+public class CaculatorDaysInMonth {
+    public void daysInMonth (int thang)
     {
         Calendar cal = Calendar.getInstance();
-       int nam = cal.get(Calendar.YEAR);
-
+        int nam = cal.get(Calendar.YEAR);
+        /*System.out.print("c = ");
+        double c = new Scanner(System.in).nextInt();*/
 
         switch (thang){
             case 1: case 3: case 5: case 7: case 8: case 10: case 12: {
@@ -39,6 +41,7 @@ public class CaculatorDayInThang {
     public  void giaiPTBac2( double a, double b, double c) {
 
         double x1, x2;
+
 
         //Kiểm tra các giá trị nhập vào
         if (a == 0) {
