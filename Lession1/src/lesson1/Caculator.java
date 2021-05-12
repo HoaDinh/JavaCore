@@ -1,3 +1,5 @@
+package lesson1;
+
 import java.lang.Math;
 
 public class Caculator {

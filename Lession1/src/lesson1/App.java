@@ -1,3 +1,7 @@
+package lesson1;
+import lesson2.CaculatorDayInThang;
+import lesson2.FomularBMI;
+
 public class App {
     int a =10;
     public static void main(String[] args) throws Exception {
@@ -7,6 +11,15 @@ public class App {
         m.Show();
         Caculator c = new Caculator();
         c.display();
+        // tinh IBM
+        FomularBMI bmi = new FomularBMI();
+        bmi.fomulaBMIbyMyself(50,150);
+        //tinh pt va ngay thang
+        CaculatorDayInThang day = new CaculatorDayInThang();
+        day.daysInThang(2);
+        day.giaiPTBac2(0,1,8.9);
+        day.findTriangle(0,2,5);
+
 
         //System.out.println(c.divide());
     }
