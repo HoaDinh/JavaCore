@@ -1,5 +1,4 @@
-package lesson1;
-
+import lesson1.Caculator;
 import lesson2.CaculatorDaysInMonth;
 import lesson2.FomularBMI;
 

@@ -54,7 +54,7 @@ public class Caculator {
         S=R*pi;
         System.out.println("The area of a Circle is " +S +"cm");
     }
-    void display()
+   public void display()
     {
         Caculator c = new Caculator();
         c.sum();
