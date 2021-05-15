@@ -11,10 +11,7 @@ public class LoopWhile {
         }
 
     }
-    public void findPrime ()
-    {
-        for (int i=0,)
-    }
+
 
 
 }

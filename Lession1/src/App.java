@@ -24,31 +24,10 @@ public class App {
         day.daysInMonth(2);
         day.giaiPTBac2(0, 1, 8.9);
         day.findTriangle(0, 2, 5);*/
-        Scanner scanner = new Scanner(System.in);
-        PrimesNumber pri = new PrimesNumber();
-        int dem = 0; // đếm số số nguyên tố
-        int i = 2;   // tìm số nguyên tố bắt dầu từ số 2
-        System.out.print("Nhập n = ");
-        int n = scanner.nextInt();
-        System.out.printf("%d số nguyên tố đầu tiên là: \n", n);
-        while (dem < n) {
-            if (pri.isPrimeNumber(i)) {
-                System.out.print(i + " ");
-                dem++;
-            }
-            i++;
-        }
-        if (n >= 2) {
-            System.out.print(2);
-        }
-        for (int j = 3; j < n; j+=2) {
-            if (pri.isPrimeNumberlessOnehundred(j)) {
-                System.out.print(" " + i);
-            }
-        }
-
-
         //System.out.println(c.divide());
+        PrimesNumber pri = new PrimesNumber();
+        pri.isPrimeNumber();
+        pri.isPrimeNumberlessOnehundred();
     }
 
     public void Show() {
