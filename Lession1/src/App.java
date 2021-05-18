@@ -25,9 +25,17 @@ public class App {
         day.giaiPTBac2(0, 1, 8.9);
         day.findTriangle(0, 2, 5);*/
         //System.out.println(c.divide());
-        PrimesNumber pri = new PrimesNumber();
+        /*PrimesNumber pri = new PrimesNumber();
         pri.isPrimeNumber();
-        pri.isPrimeNumberlessOnehundred();
+        pri.isPrimeNumberlessOnehundred();*/
+       /* FibonaciNumber fi = new FibonaciNumber();
+        fi.isFibonacciLessOneHundred();*/
+       /* FindInteger find = new FindInteger();
+        find.finPositiveAndNegative();*/
+        OperatingString s = new OperatingString();
+        System.out.println(s.findNumberinString());
+
+
     }
 
     public void Show() {

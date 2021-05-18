@@ -23,7 +23,6 @@ public class PrimesNumber {
 
    public void isPrimeNumber(){
        Scanner scanner = new Scanner(System.in);
-       PrimesNumber pri = new PrimesNumber();
        int dem = 0; // đếm số số nguyên tố
        int i = 2;   // tìm số nguyên tố bắt dầu từ số 2
        System.out.print("Nhập n = ");
