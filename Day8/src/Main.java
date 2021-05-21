@@ -2,20 +2,21 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        //transpotArrays();
-        //sumArrars();
+       /* transpotArrays();
+        sumArrars();
         SquareArrays sqr = new SquareArrays();
-       // sqr.findCrossLive();
-       // sqr.sortASC();
+       sqr.findCrossLive();
+       sqr.sortASC();*/
         FindNumbers numbers= new FindNumbers();
         numbers.changeValue();
+        numbers.sumPrimeNumber();
 
 
     }
     static void sumArrars()
     {
         Scanner sc = new Scanner(System.in);
-        System.out.printf("Nhập vào hàng ngang của mảng ");
+        System.out.println("Nhập vào hàng ngang của mảng ");
         int row = sc.nextInt();
        /* System.out.printf("nhập vào hàng dọc của mảng  ");
         int col = sc.nextInt();*/
@@ -42,7 +43,7 @@ public class Main {
         {
             for (int j=0; j<row;j++)
             {
-                System.out.printf("\t"+a[i][j]);
+                System.out.printf("\t %d",a[i][j]);
 
             }
             System.out.println("\n");
@@ -53,13 +54,13 @@ public class Main {
             for (int j=0; j<row;j++)
             {
 
-                System.out.printf("\t"+b[i][j]);
+                System.out.printf("\t %d",b[i][j]);
                 c[i][j] = a[i][j]+b[i][j];
             }
             System.out.println("\n");
         }
 
-        System.out.printf("\ntổng 2 mảng:\n", row, row);
+        System.out.printf("\ntổng 2 mảng:\n %d, %d", row, row);
         print(c);
     }
 
@@ -80,7 +81,7 @@ public class Main {
 
             }
         }
-        System.out.printf("\nCác phần tử trong ma trận chuyển vị:\n", row, column);
+        System.out.printf("\nCác phần tử trong ma trận chuyển vị:\n %d, %d", row, column);
         print(transpose);
     }
     public static void print(int[][] matrix) {
