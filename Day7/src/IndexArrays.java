@@ -39,7 +39,7 @@ public class IndexArrays {
     }
     public static void findMaxSecond()
     {
-        int array [] = {0,8,6,9,8,4,10};
+        int array [] = {0,8,6,9,4,9};
         int max = array[0];
         int second=0;
         int index=0;
@@ -57,7 +57,7 @@ public class IndexArrays {
                 index=i;
             }
         }
-        System.out.printf("Số lớn thứ hai trong chuỗi là %d với index bằng %d",second,index);
+        System.out.printf("\nSố lớn thứ hai trong chuỗi là %d với index bằng %d",second,index);
     }
 
 }

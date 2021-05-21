@@ -12,8 +12,18 @@ public class Main {
             System.out.printf(" %d\t", arr[i]);
             }*/
 
-      // IndexArrays.findMaxMinNumber();
+       //IndexArrays.findMaxMinNumber();
        IndexArrays.findMaxSecond();
+
+
+       /* int arrs[] = { 12, 11, 13, 5, 6, 7 };
+        int n = arrs.length;
+
+        HeapSort ob = new HeapSort();
+        ob.sort(arrs);
+
+        System.out.println("Sorted array is");
+       ob.printArray(arrs);*/
 
 
     }
@@ -91,6 +101,7 @@ public class Main {
         }
     }
     public static void sortDesc(int [] arr) {
+
         int temp = arr[0];
         System.out.println("\nDãy số được sắp xếp giảm dần: ");
         for (int i = 0 ; i < arr.length - 1; i++) {
@@ -102,8 +113,12 @@ public class Main {
 
                 }
             }
-            System.out.println(arr[i]);
+
+           System.out.println(arr[i]);
         }
+
+
+
     }
     /*public static void quickSort(int arr[], int begin, int end) {
         if (begin < end) {
