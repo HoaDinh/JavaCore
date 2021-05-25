@@ -3,7 +3,7 @@ public class Main {
 
     public static void main(String[] args) {
        /* transpotArrays();
-        sumArrars();
+        sumArrays();
         SquareArrays sqr = new SquareArrays();
        sqr.findCrossLive();
        sqr.sortASC();*/
@@ -13,7 +13,7 @@ public class Main {
 
 
     }
-    static void sumArrars()
+    static void sumArrays()
     {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhập vào hàng ngang của mảng ");
