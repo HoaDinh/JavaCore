@@ -33,7 +33,7 @@ public class SquareArrays {
             int temp = matrix[0];
             System.out.println("\nDãy số được sắp xếp tăng dần: ");
             for (int s = 0 ; s < matrix.length ; s++) {
-                for (int z = s + 1; z < arr.length; z++) {
+                for (int z = s + 1; z < matrix.length; z++) {
                     if (matrix[s] > matrix[z]) {
                         temp = matrix[z];
                         matrix[z] = matrix[s];
