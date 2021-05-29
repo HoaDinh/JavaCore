@@ -6,6 +6,7 @@ import java.util.regex.Pattern;
 import java.util.Scanner;
 
 public class CheckString {
+    private static final String regex = "^(.+)@(.+)$";
     public boolean checkStringInclude()
     {
         String str1 ="Anh yêu em hơn yêu Java";
@@ -20,7 +21,7 @@ public class CheckString {
         String temp="";
         for (int i=0; i<str.length();i++)
         {
-            if (temp.indexOf(String.valueOf(str.charAt(i)))==-1)
+            if (temp.indexOf(str.charAt(i))==-1)
             {
 
                 temp=temp.concat(String.valueOf(str.charAt(i)));
@@ -30,7 +31,7 @@ public class CheckString {
         System.out.println(temp);
     }
     public void checkEmail(){
-        String regex = "^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\\\.[A-Z]{2,6}$";
+
 
         Pattern pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
         Scanner scan = new Scanner(System.in);
@@ -40,7 +41,8 @@ public class CheckString {
             String email = scan.nextLine();
             Matcher matcher = pattern.matcher(email);
             check = matcher.matches();
-
+            if(check==true)
+                break;
         }while(check==false);
         System.out.printf("Email của bạn đã nhập %b",check);
     }
